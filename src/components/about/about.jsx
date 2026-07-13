@@ -1,4 +1,6 @@
 import styles from './about.module.css';
+import avatar from '../assets/avatar.jpg';
+
 
 export const About = () => {
     return (
@@ -8,7 +10,7 @@ export const About = () => {
                 <div className={styles.bgImage}></div>
                 <div className={styles.grid}>
                     <div className={styles.cell}>
-                        <img className={styles.img} src='src/assets/avatar.jpg' />
+                        <img className={styles.img} src={avatar}/>
                     </div>
                     <div className={`${styles.cell} ${styles.borderLeft}`}>
                         <p className={styles.text}>5 лет коммерческого опыта работы фронтенд-разработчиком в fintech-проектах из которых 2 года я совмещала с продуктовым дизайном: создавала мобильные и веб приложения для банков,  модульную UI-архитектуру с настраиваемыми параметрами  интерфейса для no-code платформы с нуля. В какой-то момент поняла, что меня больше всего захватывает не код, а то, каким должен быть интерфейс и почему.</p>
