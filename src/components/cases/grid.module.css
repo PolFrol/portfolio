@@ -1,0 +1,38 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 32px;
+    border-top: 1px solid var(--border);
+}
+
+.item {
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.imageBlock {
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 32px 32px;
+    height: 100%;
+}
+
+.item:hover .img {
+  transform: scale(1.5);
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}

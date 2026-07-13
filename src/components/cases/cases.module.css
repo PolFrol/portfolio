@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 64px;
+}
+
+
+.tools {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.toolItem {
+    font-family: var(--heading);
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    background-color: rgb(var(--primary-rgb) / 10%);
+    padding: 2px 8px;
+}
+
+.itemTitle {
+    margin-bottom: 12px;
+}
+
+.button {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    font-weight: 500;
+    color: var(--secondary);
+    margin-top: 32px;
+    width: fit-content;
+    border: 1px solid var(--border);
+    transition: background-color ease 0.3s, color ease 0.3s;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--primary);
+    }
+}
+
+.inner {
+    margin-right: 20px;
+}

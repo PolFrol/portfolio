@@ -1,0 +1,61 @@
+.block {
+    padding: 32px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+}
+
+.subtitle {
+    font-family: var(--heading);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tools {
+    display: flex;
+    gap: 16px;
+}
+
+.toolItem {
+    font-family: var(--heading);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.title {
+    font-family: var(--heading);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.borderLeft {
+    border-left: 1px solid var(--border);
+}
+
+.line {
+    margin: 20px 0;
+    border: none;
+    background-color: var(--border);
+    height: 1px;
+}
+
+.content {
+    border: 1px solid var(--border);
+}
+
+.header {
+    padding: 24px 32px;
+    background-color: rgb(var(--primary-rgb) / 10%);
+    border-bottom: 1px solid var(--border);
+}
+
+.headerTitle {
+    font-family: var(--heading);
+    font-size: 18px;
+    font-weight: 600;
+}

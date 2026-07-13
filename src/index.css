@@ -1,0 +1,132 @@
+:root {
+  --primary: #F05024;
+  --secondary: #fff;
+  --bg: #F5F4EF;
+  --primary-rgb: 240 80 36;
+  --border: #F05024;
+  --heading:'Ubuntu Sans Mono', Roboto, sans-serif;
+  --sans: 'Roboto', sans-serif;
+
+
+  color: var(--primary);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding-left: 40px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 1px;
+    height: 100%;
+    background-color: #F05024;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+  color: var(--primary);
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+  font-family: var(--sans);
+}
+
+nav {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  font-family: var(--heading);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

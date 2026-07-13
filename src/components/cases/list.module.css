@@ -1,0 +1,33 @@
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding: 40px 62px;
+    display: grid;
+    grid-template-columns: 72% 28%;
+}
+
+.imageBlock {
+    border: 1px solid var(--border);
+    width: fit-content;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item:hover .img {
+  transform: scale(1.5);
+}
+
+.img {
+    display: block;
+    transition: transform 0.3s ease;
+}
