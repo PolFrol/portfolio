@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+.wrapper {
+    &:last-child {
+        border-bottom: 1px solid #F05024;
+    }
+}
+
 .item {
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);

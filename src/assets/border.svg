@@ -1,11 +1,2 @@
-<svg width="1401" height="42" viewBox="0 0 1401 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="1401" height="40" transform="translate(0 2)" fill="url(#pattern0_245_7450)"/>
-<line y1="41" x2="1400" y2="41" stroke="#F05024" stroke-width="2"/>
-<line y1="1" x2="1400" y2="1" stroke="#F05024" stroke-width="2"/>
-<defs>
-<pattern id="pattern0_245_7450" patternContentUnits="objectBoundingBox" width="0.00856531" height="0.3">
-<use xlink:href="#image0_245_7450" transform="scale(0.000713776 0.025)"/>
-</pattern>
-<image id="image0_245_7450" width="12" height="12" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAADlJREFUeAHtzDERACAMQ9HgpYLiiKIYUFCIg3ZjIHfZ3v2GxDatB+D3I4UXLSbNP34EaxWsOCpY8QNXk0izu6JxOQAAAABJRU5ErkJggg=="/>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:50%;transform:translateX(-50%) skewX(-45deg);width:calc(100% + 4400px);height:100%;opacity:0.4;display:block;transform-origin:center center"><defs><pattern id="tp-R1kal9aop" x="0" y="0" width="10" height="100%" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="1" height="100%" fill="rgb(234, 67, 36)"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#tp-R1kal9aop)"></rect>
 </svg>

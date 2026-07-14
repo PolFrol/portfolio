@@ -1,23 +1,17 @@
+import { Border } from '../../components/border/border';
+import { Header } from '../../components/header/header';
+import { ShowScript } from '../../components/show-script/show-script';
+import { cases } from '../../material/mock';
 import styles from './input.module.css';
+import input from '../../assets/input.png';
+import settings from '../../assets/settings.png';
+import mobile from '../../assets/mobile.png';
 
 export const InputPage = () => {
     return (
         <>
-            <div className={styles.bgImage}></div>
-            <div className={styles.row}>
-                <div className={styles.block}>
-                    <p className={styles.subtitle}>НАЗВАНИЕ</p>
-                    <h3>Виджет банковских реквизитов</h3>
-                </div>
-                <div className={styles.block}>
-                    <p className={styles.subtitle}>НАПРАВЛЕНИЕ</p>
-                    <div className={styles.tools}>
-                        <div className={styles.toolItem}>UX/UI</div>
-                        <div className={styles.toolItem}>Дизайн система</div>
-                        <div className={styles.toolItem}>Продуктовый дизайн</div>
-                    </div>
-                </div>
-            </div>
+            <Border></Border>
+            <Header item={cases[1]}></Header>
             <div className={styles.row}>
                 <div className={styles.block}>
                     <p className={styles.title}>ПРОБЛЕМА</p>
@@ -32,29 +26,32 @@ export const InputPage = () => {
                     <p>Компонент был создан на базе существующего поля ввода, чтобы сохранить возможность размещения элементов по обеим сторонам поля (стандартные поля ввода такой паттерн не поддерживали).</p>
                 </div>
             </div>
-            <div className={styles.content}>
+            <div className={`${styles.content} ${styles.margin}`}>
                 <div className={styles.header}>
                     <p className={styles.headerTitle}>ДОБАВЛЕНИЕ ВИДЖЕТА НА ФОРМУ</p>
                 </div>
-                <img src='src/assets/telegram.svg' alt="telegram" />
+                <img className={styles.img} src={input} alt="Добавление виджета" height={600} />
             </div>
-            <div className={styles.row}>
-                <div className={styles.content}>
+            <div className={styles.rowSmall}>
+                <div className={`${styles.content} ${styles.margin}`}>
                     <div className={styles.header}>
                         <p className={styles.headerTitle}>ВАЛИДАЦИЯ</p>
                     </div>
-                    <img src='src/assets/telegram.svg' alt="telegram" />
+                    <div className={styles.imgBlock}>
+                        <img src={settings} alt="Настройки валидации" />
+                    </div>
                 </div>
-                <p>При разработке столкнулась с отсутвием требований для поведения номера карты или счета при отсутствии сохраненной маски. Чтобы это решить были добавлены параметры валидации по минимальному и максимальному количеству символов для обработки форматов, не имеющих заранее заданной маски. Например, в режиме ввода карты стандартный диапазон составляет от 13 до 19 символов (согласно международному стандарту), однако, если пользователь знает, что перевод осуществляется только на карту Visa, максимальное значение можно ограничить 16 символами - маска при этом не требуется. </p>
+                <p className={`${styles.block} ${styles.margin}`}>При разработке столкнулась с отсутвием требований для поведения номера карты или счета при отсутствии сохраненной маски. Чтобы это решить были добавлены параметры валидации по минимальному и максимальному количеству символов для обработки форматов, не имеющих заранее заданной маски. Например, в режиме ввода карты стандартный диапазон составляет от 13 до 19 символов (согласно международному стандарту), однако, если пользователь знает, что перевод осуществляется только на карту Visa, максимальное значение можно ограничить 16 символами - маска при этом не требуется. </p>
             </div>
-            
-            <p>Единый переиспользуемый компонент заменил разрозненные поля ввода платежных данных, использовавшиеся ранее на платформе. Клиенты получили возможность настраивать его под конкретные платежные системы без необходимости заказывать индивидуальную разработку.</p>
+
+            <p className={`${styles.block} ${styles.margin}`}>Единый переиспользуемый компонент заменил разрозненные поля ввода платежных данных, использовавшиеся ранее на платформе. Клиенты получили возможность настраивать его под конкретные платежные системы без необходимости заказывать индивидуальную разработку.</p>
             <div className={styles.content}>
                 <div className={styles.header}>
                     <p className={styles.headerTitle}>ИСПОЛЬЗОВАНИЕ ВИДЖЕТА В МОБИЛЬНОМ ПРИЛОЖЕНИИ</p>
                 </div>
-                <img src='src/assets/telegram.svg' alt="telegram" />
+                <img className={styles.img} src={mobile} alt="Использование в мобильном приложении" />
             </div>
+            <ShowScript src={'https://www.figma.com/design/X6LfqnBqRXnIoM589sjXVD/%D0%A1%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8?node-id=1-2987&t=4PpAZoTMpTpbstdY-1'}></ShowScript>
         </>
     )
 }

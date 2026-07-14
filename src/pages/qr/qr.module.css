@@ -8,22 +8,9 @@
     border-bottom: 1px solid var(--border);
 }
 
-.subtitle {
-    font-family: var(--heading);
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.tools {
-    display: flex;
-    gap: 16px;
-}
-
-.toolItem {
-    font-family: var(--heading);
-    font-size: 16px;
-    font-weight: 500;
+.rowSmall {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .title {
@@ -46,6 +33,13 @@
 
 .content {
     border: 1px solid var(--border);
+    margin-top: 62px;
+}
+
+.contentSmall {
+    border: 1px solid var(--border);
+    border-left: none;
+    margin-top: 62px;
 }
 
 .header {
@@ -58,4 +52,10 @@
     font-family: var(--heading);
     font-size: 18px;
     font-weight: 600;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }

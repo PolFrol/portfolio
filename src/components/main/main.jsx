@@ -1,3 +1,4 @@
+import { Border } from '../border/border';
 import styles from './main.module.css';
 
 export const Main = () => {
@@ -20,8 +21,19 @@ export const Main = () => {
                 </nav>
             </header>
             <section className={styles.section}>
-                <div className={styles.bgImage}></div>
+                <Border></Border>
                 <div className={styles.block}>
+                    <div className={styles.blockVideo}>
+                        <video
+                            className={styles.video}
+                            src="https://Framer-Expert.b-cdn.net/moire_hero.webm"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="auto"
+                        />
+                    </div>
                     <div className={styles.textBlock}>
                         <h1>Продуктовый дизайнер <br />с бэкграундом фронтенд разработки</h1>
                     </div>
@@ -37,7 +49,7 @@ export const Main = () => {
                         </button>
                     </div>
                 </div>
-                <div className={styles.bgImage}></div>
+                <Border></Border>
             </section>
         </>
     )

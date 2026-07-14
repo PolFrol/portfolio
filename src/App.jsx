@@ -3,10 +3,12 @@ import { MainPage } from './pages/main/main-page';
 import { QrPage } from './pages/qr/qr';
 import { InputPage } from "./pages/input/input";
 import { DashboardPage } from "./pages/dashboard/dashboard";
+import { ScrollToTop } from "./components/scroll/scroll";
 
 function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/cases/qr-generator" element={<QrPage />} />

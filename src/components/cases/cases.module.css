@@ -5,6 +5,9 @@
     padding: 40px 64px;
 }
 
+.section {
+    margin-bottom: 80px;
+}
 
 .tools {
     display: flex;
@@ -26,6 +29,7 @@
 }
 
 .button {
+    font-family: var(--heading);
     padding: 12px 24px;
     background-color: var(--primary);
     font-weight: 500;

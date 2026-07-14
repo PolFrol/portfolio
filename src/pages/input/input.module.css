@@ -8,6 +8,15 @@
     border-bottom: 1px solid var(--border);
 }
 
+.rowSmall {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.margin {
+    margin-top: 62px;
+}
+
 .subtitle {
     font-family: var(--heading);
     font-size: 16px;
@@ -58,4 +67,16 @@
     font-family: var(--heading);
     font-size: 18px;
     font-weight: 600;
+}
+
+.imgBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }

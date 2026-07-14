@@ -1,0 +1,23 @@
+.showScript {
+    background-color: var(--primary);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 62px;
+    cursor: pointer;
+
+    &:hover {
+        .svg {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.svg {
+    transition: transform 0.3s ease;
+}
+
+.title {
+    color: var(--secondary);
+}

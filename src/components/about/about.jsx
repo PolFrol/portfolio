@@ -1,16 +1,17 @@
 import styles from './about.module.css';
 import avatar from '../../assets/avatar.jpg';
+import { Border } from '../border/border';
 
 
 export const About = () => {
     return (
         <>
-            <section id="about">
+            <section id="about" className={styles.section}>
                 <h2 className={styles.title}>О СЕБЕ</h2>
-                <div className={styles.bgImage}></div>
+                <Border></Border>
                 <div className={styles.grid}>
                     <div className={styles.cell}>
-                        <img className={styles.img} src={avatar}/>
+                        <img className={styles.img} src={avatar} />
                     </div>
                     <div className={`${styles.cell} ${styles.borderLeft}`}>
                         <p className={styles.text}>5 лет коммерческого опыта работы фронтенд-разработчиком в fintech-проектах из которых 2 года я совмещала с продуктовым дизайном: создавала мобильные и веб приложения для банков,  модульную UI-архитектуру с настраиваемыми параметрами  интерфейса для no-code платформы с нуля. В какой-то момент поняла, что меня больше всего захватывает не код, а то, каким должен быть интерфейс и почему.</p>
@@ -28,7 +29,7 @@ export const About = () => {
                         <div>
                             <p className={styles.subtitle}>2023–2026 — Frontend Developer, no-code платформа</p>
                             <p>Создавала UI-модули для конструктора страниц и форм - проектировала гибкие компоненты, которые сами становятся инструментом для чужого дизайна, так как пользователи no-code платформы строят из них свои интерфейсы.
-Проводила ревью макетов, что помогало подсветить спорные моменты из-за которых могли возникнуть проблемы выпуска фичи в прод.</p>
+                                Проводила ревью макетов, что помогало подсветить спорные моменты из-за которых могли возникнуть проблемы выпуска фичи в прод.</p>
                         </div>
                     </div>
                     <div className={`${styles.cell} ${styles.border}`}>
@@ -54,7 +55,7 @@ export const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div  className={`${styles.cell} ${styles.border}`}>
+                    <div className={`${styles.cell} ${styles.border}`}>
                         <h4 className={styles.text}>Карьерный трек</h4>
                         <div className={styles.jobs}>
                             <div className={styles.job}>
@@ -67,7 +68,9 @@ export const About = () => {
                                 <p>Верстальщик / 2021</p>
                             </div>
                         </div>
-                        <button type='button' className={styles.button}>СМОТРЕТЬ РЕЗЮМЕ</button>
+                        <button type='button' className={styles.button}>
+                            <a href='https://docs.google.com/document/d/1KBvB_hHpMe2RsS7OspyTQ0qIZo4MX_HNlit-h13PU6I/edit?usp=sharing'>СМОТРЕТЬ РЕЗЮМЕ</a>
+                        </button>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,52 @@
+.block {
+    padding: 32px;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
+.title {
+    font-family: var(--heading);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.line {
+    margin: 20px 0;
+    border: none;
+    background-color: var(--border);
+    height: 1px;
+}
+
+.text {
+    margin-bottom: 16px;
+}
+
+.header {
+    padding: 24px 32px;
+    background-color: rgb(var(--primary-rgb) / 10%);
+    border-bottom: 1px solid var(--border);
+}
+
+.headerTitle {
+    font-family: var(--heading);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content {
+    border: 1px solid var(--border);
+    border-left: none;
+    border-top: none;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
