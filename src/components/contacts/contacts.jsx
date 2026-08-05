@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { Border } from '../border/border';
 import styles from './contacts.module.css';
 
 export const Contacts = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <section id="contacts">
                 <Border></Border>
-                <h2 className={styles.title}>КОНТАКТЫ</h2>
+                <h2 className={styles.title}>{t('contacts')}</h2>
                 <div className={styles.contacts}>
                     <a className={styles.mail} href='mailto:polfroll@gmail.com'>polfroll@gmail.com</a>
                     <div className={styles.links}>

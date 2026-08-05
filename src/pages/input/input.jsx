@@ -6,48 +6,51 @@ import styles from './input.module.css';
 import input from '../../assets/input.png';
 import settings from '../../assets/settings.png';
 import mobile from '../../assets/mobile.png';
+import { useTranslation } from 'react-i18next';
 
 export const InputPage = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <Border></Border>
             <Header item={cases[1]}></Header>
             <div className={styles.row}>
                 <div className={styles.block}>
-                    <p className={styles.title}>ПРОБЛЕМА</p>
-                    <p>Формы оплаты — один из самых проблемных этапов взаимодействия с любым финтех-продуктом. При вводе значений в обычный инпут пользователи часто ошибаются при вводе номеров карт и счетов, платежные системы не распознаются, нет возможности валидировать введенные значения.</p>
+                    <p className={styles.title}>{t('input.problem.title')}</p>
+                    <p>{t('input.problem.text1')}</p>
                     <hr className={styles.line}></hr>
-                    <p>Задача состояла в том, чтобы спроектировать единый, переиспользуемый компонент ввода, способный работать с картами, банковскими счетами и смешанным форматом. Он должен был отображать логотип платежной системы, флаг страны и код валюты, выполняя при этом валидацию  по мере ввода данных пользователем.</p>
+                    <p>{t('input.problem.text2')}</p>
                 </div>
                 <div className={`${styles.block} ${styles.borderLeft}`}>
-                    <p className={styles.title}>РЕШЕНИЕ</p>
-                    <p>Я спроектировала и реализовала этот компонент в рамках no-code платформы. Я определила состояния компонента (по умолчанию, наведение, фокус, активное состояние, неактивное состояние, ошибка), описала логику маскирования и валидации для каждого режима ввода (карта, счет, карта/счет), а также подготовила макеты в Figma и реализовала фронтенд-часть как для веб, так и для мобильных/адаптивных платформ.</p>
+                    <p className={styles.title}>{t('input.desition.title')}</p>
+                    <p>{t('input.desition.text1')}</p>
                     <hr className={styles.line}></hr>
-                    <p>Компонент был создан на базе существующего поля ввода, чтобы сохранить возможность размещения элементов по обеим сторонам поля (стандартные поля ввода такой паттерн не поддерживали).</p>
+                    <p>{t('input.desition.text2')}</p>
                 </div>
             </div>
             <div className={`${styles.content} ${styles.margin}`}>
                 <div className={styles.header}>
-                    <p className={styles.headerTitle}>ДОБАВЛЕНИЕ ВИДЖЕТА НА ФОРМУ</p>
+                    <p className={styles.headerTitle}>{t('input.adding')}</p>
                 </div>
                 <img className={styles.img} src={input} alt="Добавление виджета" height={600} />
             </div>
             <div className={styles.rowSmall}>
                 <div className={`${styles.content} ${styles.margin}`}>
                     <div className={styles.header}>
-                        <p className={styles.headerTitle}>ВАЛИДАЦИЯ</p>
+                        <p className={styles.headerTitle}>{t('input.validation')}</p>
                     </div>
                     <div className={styles.imgBlock}>
                         <img src={settings} alt="Настройки валидации" />
                     </div>
                 </div>
-                <p className={`${styles.block} ${styles.margin}`}>При разработке столкнулась с отсутвием требований для поведения номера карты или счета при отсутствии сохраненной маски. Чтобы это решить были добавлены параметры валидации по минимальному и максимальному количеству символов для обработки форматов, не имеющих заранее заданной маски. Например, в режиме ввода карты стандартный диапазон составляет от 13 до 19 символов (согласно международному стандарту), однако, если пользователь знает, что перевод осуществляется только на карту Visa, максимальное значение можно ограничить 16 символами - маска при этом не требуется. </p>
+                <p className={`${styles.block} ${styles.margin}`}>{t('input.textValidator')}</p>
             </div>
 
-            <p className={`${styles.block} ${styles.margin}`}>Единый переиспользуемый компонент заменил разрозненные поля ввода платежных данных, использовавшиеся ранее на платформе. Клиенты получили возможность настраивать его под конкретные платежные системы без необходимости заказывать индивидуальную разработку.</p>
+            <p className={`${styles.block} ${styles.margin}`}>{t('input.text')}</p>
             <div className={styles.content}>
                 <div className={styles.header}>
-                    <p className={styles.headerTitle}>ИСПОЛЬЗОВАНИЕ ВИДЖЕТА В МОБИЛЬНОМ ПРИЛОЖЕНИИ</p>
+                    <p className={styles.headerTitle}>{t('input.mobile')}</p>
                 </div>
                 <img className={styles.img} src={mobile} alt="Использование в мобильном приложении" />
             </div>

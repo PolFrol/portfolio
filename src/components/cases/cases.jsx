@@ -4,16 +4,17 @@ import list from './list.module.css';
 import grid from './grid.module.css';
 import { useState } from 'react';
 import { cases } from '../../material/mock';
+import { useTranslation } from 'react-i18next';
 
 export const Cases = () => {
-    // const navigate = useNavigate();
     const [mode, setMode] = useState('grid');
+    const { t } = useTranslation();
 
     return (
         <>
             <section id="cases" className={styles.section}>
                 <div className={styles.header}>
-                    <h2>КЕЙСЫ</h2>
+                    <h2>{t('cases.title')}</h2>
                     <div>
                         <button
                             type="button"
@@ -45,12 +46,9 @@ export const Cases = () => {
                                                 <div key={tool} className={styles.toolItem}>{tool}</div>
                                             ))}
                                         </div>
-                                        <h3 className={styles.itemTitle}>{item.title}</h3>
-                                        <p>{item.text}</p>
+                                        <h3 className={styles.itemTitle}>{t(`cases.${item.id}.title`)}</h3>
+                                        <p>{t(`cases.${item.id}.text`)}</p>
                                     </div>
-                                    {/* <Link to={item.path} className={styles.button}>
-                                        ПОСМОТРЕТЬ КЕЙС
-                                    </Link> */}
                                 </div>
                                 <div>
                                     <div className={`${mode === 'grid' ? grid.imageBlock : list.imageBlock}`}>

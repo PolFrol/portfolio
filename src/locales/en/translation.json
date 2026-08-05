@@ -1,0 +1,105 @@
+{
+  "navigation": {
+    "name": "FROLOVA POLINA",
+    "cases": "CASES",
+    "about": "ABOUT",
+    "contacts": "CONTACTS"
+  },
+  "main": {
+    "title": "Product Designer\nwith a Frontend Development Background",
+    "description": "I design interfaces and understand how they are built",
+    "projects": "VIEW PROJECTS",
+    "invite": "INVITE"
+  },
+  "about": {
+    "title": "ABOUT",
+    "text1": "I have 5 years of commercial experience as a Frontend Developer in fintech, including 2 years combining development with product design. I designed mobile and web applications for banks and built a modular UI architecture with configurable interface parameters for a no-code platform from scratch. Over time, I realized that what fascinated me most was not writing code, but understanding how an interface should work and why.",
+    "text2": "I transitioned into Product Design, bringing with me a strong understanding of technical constraints, component-based thinking, and a systems-oriented approach. My designs are realistic because I know exactly how they will be built.",
+    "subtitle1": "2020–2023 — Freelance Web Designer",
+    "text3": "Designed 10+ landing pages for educational projects (Spanish and English language courses) and the event industry (wedding invitations). Worked directly with clients without formal briefs, defining page goals, user needs, and the visual direction for each project independently.",
+    "subtitle2": "2021–2023 — Frontend Markup Developer (Fintech)",
+    "text4": "Contributed to the company's internal design system by implementing UI controls, components, and their states while collaborating with designers on technical constraints. Defined reusable design tokens adopted across multiple applications, reducing development time for new screens and improving visual consistency between products.",
+    "subtitle3": "2023–2026 — Frontend Developer, No-Code Platform",
+    "text5": "Built reusable UI modules for a page and form builder, designing flexible components that became tools for other designers, as users of the no-code platform assembled their own interfaces from them. Conducted design reviews, helping identify potential implementation issues before features reached production.",
+    "companies": "COMPANIES I'VE WORKED WITH",
+    "rysgal": "Rysgal Bank",
+    "aiyl": "Aiyl Bank",
+    "ingo": "Ingosstrakh Bank",
+    "kyban": "Kuban Credit Bank",
+    "rnkb": "RNKB Bank",
+    "bcn": "Banco Caboverdiano de Negócios",
+    "track": "CAREER PATH",
+    "job1": "Product Designer / 2025",
+    "job2": "Frontend Developer / 2023",
+    "job3": "Frontend Markup Developer / 2021",
+    "button": "RESUME"
+  },
+  "cases": {
+    "title": "CASE STUDIES",
+    "1": {
+      "title": "Image Generation: QR Code Link Creation Flow",
+      "text": "A cross-platform tool for generating images that can be used to create and share QR code links."
+    },
+    "2": {
+      "title": "Bank Details Input Widget",
+      "text": "A reusable input component for bank cards and account numbers with real-time BIN detection, input masking, and cross-platform validation states."
+    },
+    "3": {
+      "title": "Dashboard",
+      "text": "A dashboard designed to present key information in a language learning application."
+    }
+  },
+  "contacts": "CONTACTS",
+  "header": {
+    "name": "TITLE",
+    "industry": "INDUSTRY"
+  },
+  "qr": {
+    "problem": {
+      "title": "PROBLEM",
+      "text": "Users needed a way to generate and share QR code links that could be saved and sent to others. Since the feature was being built for a no-code platform, it had to integrate with the platform's action system, work seamlessly across web and mobile, and account for differences between available APIs. For example, printing is only supported on the web, while the native Share menu is available only on mobile devices."
+    },
+    "desition": {
+      "title": "SOLUTION",
+      "text1": "Instead of relying on the built-in QR code widget, I designed a standalone action. This approach solved multiple problems at once: the same action could also generate thumbnail images for page templates, which was another product requirement at the time. The action is triggered by a user event, receives the ID of an HTML element, and uses the html-to-image library to generate an image file.",
+      "text2": "This solution made the feature much more flexible, allowing both the number of available buttons and the action type to be configured individually for each client without additional development."
+    },
+    "settings": "ACTION SETTINGS",
+    "web": "AVAILABLE WEB ACTIONS",
+    "final": "FINAL RESULT"
+  },
+  "script": "VIEW THE FULL USER FLOW",
+  "input": {
+    "problem": {
+      "title": "PROBLEM",
+      "text1": "Payment forms are one of the most challenging interaction points in any fintech product. When entering data into a standard input field, users often make mistakes while entering card and account numbers, payment systems are not recognized, and there is no way to validate the entered values.",
+      "text2": "The task was to design a unified, reusable input component capable of supporting cards, bank accounts, and mixed input formats. It had to display the payment system logo, country flag, and currency code while validating data as the user entered it."
+    },
+    "desition": {
+      "title": "SOLUTION",
+      "text1": "I designed and implemented this component as part of a no-code platform. I defined the component states (default, hover, focus, active, disabled, error), described masking and validation logic for each input mode (card, account, card/account), prepared Figma layouts, and implemented the frontend part for web, mobile, and responsive platforms.",
+      "text2": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input components did not support this pattern."
+    },
+    "adding": "ADDING THE WIDGET TO THE FORM",
+    "validation": "VALIDATION",
+    "textValidator": "During development, I faced a lack of requirements for handling card or account numbers without a predefined mask. To solve this issue, I added validation parameters for minimum and maximum character limits to support formats without predefined masks. For example, in card input mode, the standard range is 13 to 19 characters (according to international standards). However, if a user knows that the transfer is made only to a Visa card, the maximum value can be limited to 16 characters — without requiring a predefined mask.",
+    "text": "The unified reusable component replaced fragmented payment data input fields previously used on the platform. Clients gained the ability to configure it for specific payment systems without requiring custom development.",
+    "mobile": "USING THE WIDGET IN A MOBILE APPLICATION"
+  },
+  "dashboard": {
+    "task": {
+      "title": "TASK",
+      "text1": "Create an English learning dashboard in two themes: light and dark.",
+      "text2": "Practice working with grids, components, and color tokens."
+    },
+    "desition": {
+      "title": "SOLUTION",
+      "text1": "I started with a content audit: identified what information should be displayed on the dashboard — progress in current courses, homework completion status, ranking among friends, and overall learning performance.",
+      "text2": "Next, I grouped the content into meaningful blocks and prioritized them based on user importance. The performance chart was the most information-dense element (daily progress trends and metric comparisons), so I allocated the largest area to it and placed it in the center — according to the F-pattern layout, this is the first attention zone after the top navigation.",
+      "text3": "I built the “Homework” and “Friends Score” blocks using the same logic: both display a list of items with a progress bar/value on the right. Since the data structure was identical (list + metric), I made them equal in size and aligned them vertically. This creates visual balance in the lower part of the screen and communicates that both sections have the same level of importance rather than one being primary and the other secondary.",
+      "text4": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input components did not support this pattern."
+    },
+    "light": "LIGHT THEME",
+    "dark": "DARK THEME"
+  }
+}

@@ -5,24 +5,18 @@ import light from '../assets/light.png';
 export const cases = [
     {
         id: 1,
-        title: 'Генерация изображения - процесс создания ссылки на QR-код',
-        text: 'Кроссплатформенный инструмент для генерации изображений, который можно использовать для создания QR-ссылки.',
         image: qr,
         path: '/cases/qr-generator',
-        tools: ['UX/UI', 'Дизайн система', 'Продуктовый дизайн'],
+        tools: ['UX/UI', 'Design System', 'Product Design'],
     },
     {
         id: 2,
-        title: 'Виджет банковских реквизитов',
-        text: 'Универсальный виджет для ввода данных карты или банковского счета, поддерживающий определение BIN в реальном времени, маскирование формата и кроссплатформенные состояния и валидации.',
         image: input,
         path: '/cases/input-payment',
-        tools: ['UX/UI', 'Дизайн система', 'Продуктовый дизайн'],
+        tools: ['UX/UI', 'Design System', 'Product Design'],
     },
     {
         id: 3,
-        title: 'Дашборд',
-        text: 'Дашборд для отображения главной информации в приложении для изучения языка.',
         image: light,
         path: '/cases/dashboard',
         tools: ['UX/UI'],

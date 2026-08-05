@@ -6,40 +6,43 @@ import { ShowScript } from '../../components/show-script/show-script';
 import { Header } from '../../components/header/header';
 import { cases } from '../../material/mock';
 import { Border } from '../../components/border/border';
+import { useTranslation } from 'react-i18next';
 
 export const QrPage = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <Border></Border>
             <Header item={cases[0]}></Header>
             <div className={styles.row}>
                 <div className={styles.block}>
-                    <p className={styles.title}>ПРОБЛЕМА</p>
-                    <p>Пользователям требовалась возможность создавать и делиться ссылкой на QR-коды, которые можно было бы сохранять и отправлять другим. Однако, поскольку речь шла о no-code платформе, решение должно было интегрироваться в ее систему действий, работать как в веб-версии, так и на мобильных устройствах, а также учитывать различия в доступных API (например, печать доступна только в вебе, а системное меню «Поделиться» — только на мобильных устройствах).</p>
+                    <p className={styles.title}>{t('qr.problem.title')}</p>
+                    <p>{t('qr.problem.text')}</p>
                 </div>
                 <div className={`${styles.block} ${styles.borderLeft}`}>
-                    <p className={styles.title}>РЕШЕНИЕ</p>
-                    <p>Я выбрала создание отдельного действия вместо использования встроенного виджета QR-кода, так как это позволяло решить сразу несколько задач: то же самое действие могло генерировать миниатюры для шаблонов страниц — что было актуальной потребностью на тот момент. Действие запускается определенным событием пользователя, получает ID HTML-элемента и использует библиотеку html-to-image для создания файла изображения.</p>
+                    <p className={styles.title}>{t('qr.desition.title')}</p>
+                    <p>{t('qr.desition.text1')}</p>
                     <hr className={styles.line}></hr>
-                    <p>Такой подход сделал решение более гибким: количество кнопок и тип действия можно было настраивать для каждого клиента без дополнительной разработки.</p>
+                    <p>{t('qr.desition.text2')}</p>
                 </div>
             </div>
             <div className={styles.content}>
                 <div className={styles.header}>
-                    <p className={styles.headerTitle}>НАСТРОЙКА ДЕЙСТВИЯ</p>
+                    <p className={styles.headerTitle}>{t('qr.settings')}</p>
                 </div>
                 <img className={styles.img} src={actionSetting} alt="Настройка действия" height={600} />
             </div>
             <div className={styles.rowSmall}>
                 <div className={styles.contentSmall}>
                     <div className={styles.header}>
-                        <p className={styles.headerTitle}>ДОСТУПНЫЕ ДЕЙСТВИЯ ДЛЯ ВЕБА</p>
+                        <p className={styles.headerTitle}>{t('qr.web')}</p>
                     </div>
                     <img className={styles.img} src={actionWeb} alt="Действия на вебе" />
                 </div>
                 <div className={styles.contentSmall}>
                     <div className={styles.header}>
-                        <p className={styles.headerTitle}>КОНЕЧНЫЙ ВИД</p>
+                        <p className={styles.headerTitle}>{t('qr.final')}</p>
                     </div>
                     <img className={styles.img} src={actionEnd} alt="Конечный вид настройки" />
                 </div>
