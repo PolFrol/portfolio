@@ -37,7 +37,7 @@
   "cases": {
     "title": "CASE STUDIES",
     "1": {
-      "title": "Image Generation: QR Code Link Creation Flow",
+      "title": "Image Generation",
       "text": "A cross-platform tool for generating images that can be used to create and share QR code links."
     },
     "2": {

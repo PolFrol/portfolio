@@ -18,7 +18,7 @@ export const Border = () => {
                         transformOrigin: 'center center',
                     }}
                 >
-                    <defs><pattern id="tp-R1kal9aop" x="0" y="0" width="10" height="100%" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="1" height="100%" fill="rgb(234, 67, 36)"></rect></pattern></defs>
+                    <defs><pattern id="tp-R1kal9aop" x="0" y="0" width="10" height="100%" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="1" height="100%" fill="#c5c5c3"></rect></pattern></defs>
 
                     <rect x="0" y="0" width="100%" height="100%" fill="url(#tp-R1kal9aop)"></rect>
                 </svg>

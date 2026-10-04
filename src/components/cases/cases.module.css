@@ -19,13 +19,18 @@
     font-family: var(--heading);
     font-size: 12px;
     font-weight: 500;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-secondary);
+    color: var(--primary);
     background-color: rgb(var(--primary-rgb) / 10%);
     padding: 2px 8px;
 }
 
 .itemTitle {
     margin-bottom: 12px;
+}
+
+.itemDescr {
+    color: var(--text-secondary);
 }
 
 .button {

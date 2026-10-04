@@ -1,14 +1,17 @@
 :root {
   --primary: #F05024;
+  --text-primary: #3f0b01;
   --secondary: #fff;
+  --text-secondary: #6B5A54;
   --bg: #F5F4EF;
   --primary-rgb: 240 80 36;
-  --border: #F05024;
-  --heading:'Ubuntu Sans Mono', Roboto, sans-serif;
+  --border: #c5c5c3;
+  --border-secondary: #F05024;
+  --heading:'JetBrains Mono', Roboto, sans-serif;
   --sans: 'Roboto', sans-serif;
 
 
-  color: var(--primary);
+  color: var(--text-primary);
   background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,7 +61,7 @@ body {
     left: 40px;
     width: 1px;
     height: 100%;
-    background-color: #F05024;
+    background-color: #c5c5c3;
   }
 }
 
@@ -67,7 +70,7 @@ h2,
 h3,
 h4 {
   font-family: var(--heading);
-  color: var(--primary);
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -81,7 +84,7 @@ h1 {
 }
 h2 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   @media (max-width: 1024px) {
     font-size: 20px;
   }
@@ -89,7 +92,7 @@ h2 {
 
 h3 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 600;
   @media (max-width: 1024px) {
     font-size: 20px;
   }

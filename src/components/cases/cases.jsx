@@ -1,13 +1,13 @@
 import { Link } from 'react-router';
 import styles from './cases.module.css';
-import list from './list.module.css';
+// import list from './list.module.css';
 import grid from './grid.module.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { cases } from '../../material/mock';
 import { useTranslation } from 'react-i18next';
 
 export const Cases = () => {
-    const [mode, setMode] = useState('grid');
+    // const [mode, setMode] = useState('grid');
     const { t } = useTranslation();
 
     return (
@@ -15,7 +15,7 @@ export const Cases = () => {
             <section id="cases" className={styles.section}>
                 <div className={styles.header}>
                     <h2>{t('cases.title')}</h2>
-                    <div>
+                    {/* <div>
                         <button
                             type="button"
                             onClick={() => setMode(mode === 'list' ? 'grid' : 'list')}
@@ -33,13 +33,13 @@ export const Cases = () => {
                                 </svg>
                             )}
                         </button>
-                    </div>
+                    </div> */}
                 </div>
-                <ul className={mode === 'grid' ? grid.grid : list.list}>
+                <ul className={ grid.grid }>
                     {cases.map((item) => (
-                        <li key={item.id} className={list.wrapper}>
-                            <Link to={item.path} className={`${mode === 'grid' ? grid.item : list.item}`}>
-                                <div className={`${mode === 'grid' ? grid.content : list.content}`}>
+                        <li key={item.id}>
+                            <Link to={item.path} className={ grid.item }>
+                                <div className={ grid.content }>
                                     <div className={styles.inner}>
                                         <div className={styles.tools}>
                                             {item.tools.map((tool) => (
@@ -47,12 +47,12 @@ export const Cases = () => {
                                             ))}
                                         </div>
                                         <h3 className={styles.itemTitle}>{t(`cases.${item.id}.title`)}</h3>
-                                        <p>{t(`cases.${item.id}.text`)}</p>
+                                        <p className={styles.itemDescr}>{t(`cases.${item.id}.text`)}</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <div className={`${mode === 'grid' ? grid.imageBlock : list.imageBlock}`}>
-                                        <img className={`${mode === 'grid' ? grid.img : list.img}`} src={item.image} height='250' />
+                                    <div className={ grid.imageBlock }>
+                                        <img className={ grid.img } src={item.image} height='250' />
                                     </div>
                                 </div>
                             </Link>

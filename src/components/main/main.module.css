@@ -43,15 +43,16 @@ li {
     font-size: 20px;
 }
 
-.button a {
+.button {
+    font-family: var(--heading);
     font-size: 20px;
     font-weight: 600;
     padding: 12px 24px;
     border: 1px solid var(--border);
-    color: var(--primary);
+    color: var(--text-primary);
     cursor: pointer;
     transition: background-color ease 0.3s, color ease 0.3s;
-    margin-right: 77px;
+    margin-right: 24px;
     background-color: var(--bg);
 
     &:hover {
@@ -60,12 +61,13 @@ li {
     }
 }
 
-.buttonInversion a {
+.buttonInversion {
+    font-family: var(--heading);
     font-size: 20px;
     font-weight: 600;
     padding: 12px 24px;
     border: 1px solid var(--border);
-    background-color: var(--primary);
+    background-color: var(--text-primary);
     color: var(--secondary);
     cursor: pointer;
     transition: background-color ease 0.3s, color ease 0.3s;
@@ -89,7 +91,7 @@ li {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: rgb(244, 241, 235);
+    /* background-color: rgb(244, 241, 235); */
     border: 1px solid var(--border);
 }
 

@@ -48,12 +48,8 @@ export const Main = () => {
                         <p className={styles.descr}>{t('main.description')}</p>
                     </div>
                     <div className={styles.footer}>
-                        <button type='button' className={styles.button}>
-                            <a href="#cases">{t('main.projects')}</a>
-                        </button>
-                        <button type='button' className={styles.buttonInversion}>
-                            <a href='https://t.me/pol_frol'>{t('main.invite')}</a>
-                        </button>
+                        <a href="#cases" className={styles.button}>{t('main.projects')}</a>
+                        <a className={styles.buttonInversion} href='https://t.me/pol_frol'>{t('main.invite')}</a>
                     </div>
                 </div>
                 <Border></Border>
