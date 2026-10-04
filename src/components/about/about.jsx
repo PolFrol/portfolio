@@ -14,7 +14,7 @@ export const About = () => {
                 <Border></Border>
                 <div className={styles.grid}>
                     <div className={styles.avatarCell}>
-                        <img className={styles.img} src={avatar} />
+                        <img className={styles.img} src={avatar} width={290} />
                     </div>
                     <div className={`${styles.cell} ${styles.borderLeft}`}>
                         <p className={styles.text}>{t('about.text1')}</p>
