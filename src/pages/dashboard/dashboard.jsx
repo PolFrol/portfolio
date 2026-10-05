@@ -15,16 +15,16 @@ export const DashboardPage = () => {
             <Header item={cases[2]}></Header>
             <div className={styles.block}>
                 <p className={styles.title}>{t('dashboard.task.title')}</p>
-                <p>{t('dashboard.task.text1')}</p>
-                <p>{t('dashboard.task.text2')}</p>
+                <p className={styles.text}>{t('dashboard.task.text1')}</p>
+                <p className={styles.text}>{t('dashboard.task.text2')}</p>
             </div>
             <div className={styles.block}>
                 <p className={styles.title}>{t('dashboard.desition.title')}</p>
-                <p className={styles.text}>{t('dashboard.desition.text1')}</p>
-                <p className={styles.text}>{t('dashboard.desition.text2')}</p>
-                <p>{t('dashboard.desition.text3')}</p>
+                <p className={`${styles.text} ${styles.margin}`}>{t('dashboard.desition.text1')}</p>
+                <p className={`${styles.text} ${styles.margin}`}>{t('dashboard.desition.text2')}</p>
+                <p className={styles.text}>{t('dashboard.desition.text3')}</p>
                 <hr className={styles.line}></hr>
-                <p>{t('dashboard.desition.text4')}</p>
+                <p className={styles.text}>{t('dashboard.desition.text4')}</p>
             </div>
             <div className={styles.row}>
                 <div className={styles.content}>

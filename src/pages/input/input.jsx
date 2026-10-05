@@ -15,19 +15,34 @@ export const InputPage = () => {
         <>
             <Border></Border>
             <Header item={cases[1]}></Header>
+            <div className={`${styles.block} ${styles.borderBottom}`}>
+                <p className={styles.title}>{t('input.company.title')}</p>
+                <p className={styles.text}>{t('input.company.text')}</p>
+            </div>
             <div className={styles.row}>
                 <div className={styles.block}>
                     <p className={styles.title}>{t('input.problem.title')}</p>
-                    <p>{t('input.problem.text1')}</p>
-                    <hr className={styles.line}></hr>
-                    <p>{t('input.problem.text2')}</p>
+                    <p className={styles.text}>{t('input.problem.text')}</p>
                 </div>
                 <div className={`${styles.block} ${styles.borderLeft}`}>
-                    <p className={styles.title}>{t('input.desition.title')}</p>
-                    <p>{t('input.desition.text1')}</p>
-                    <hr className={styles.line}></hr>
-                    <p>{t('input.desition.text2')}</p>
+                    <p className={styles.title}>{t('input.importance.title')}</p>
+                    <p className={styles.text}>{t('input.importance.text')}</p>
                 </div>
+            </div>
+            <div className={`${styles.block} ${styles.borderBottom}`}>
+                <p className={styles.title}>{t('input.team.title')}</p>
+                <div>
+                    <p className={styles.role}>{t('input.team.role1')}</p>
+                    <p className={styles.role}>{t('input.team.role2')}</p>
+                    <p className={styles.role}>{t('input.team.role3')}</p>
+                    <p className={styles.role}>{t('input.team.role4')}</p>
+                </div>
+            </div>
+            <div className={`${styles.block} ${styles.borderLeft}`}>
+                <p className={styles.title}>{t('input.desition.title')}</p>
+                <p className={styles.text}>{t('input.desition.text1')}</p>
+                <hr className={styles.line}></hr>
+                <p className={styles.text}>{t('input.desition.text2')}</p>
             </div>
             <div className={`${styles.content} ${styles.margin}`}>
                 <div className={styles.header}>
@@ -44,10 +59,10 @@ export const InputPage = () => {
                         <img src={settings} alt="Настройки валидации" />
                     </div>
                 </div>
-                <p className={`${styles.block} ${styles.margin}`}>{t('input.textValidator')}</p>
+                <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.textValidator')}</p>
             </div>
 
-            <p className={`${styles.block} ${styles.margin}`}>{t('input.text')}</p>
+            <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.text')}</p>
             <div className={styles.content}>
                 <div className={styles.header}>
                     <p className={styles.headerTitle}>{t('input.mobile')}</p>
