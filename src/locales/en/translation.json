@@ -56,13 +56,17 @@
   },
   "qr": {
     "problem": {
-      "title": "PROBLEM",
-      "text": "Users needed a way to generate and share QR code links that could be saved and sent to others. Since the feature was being built for a no-code platform, it had to integrate with the platform's action system, work seamlessly across web and mobile, and account for differences between available APIs. For example, printing is only supported on the web, while the native Share menu is available only on mobile devices."
+      "title": "TASK",
+      "text": "Give users the ability to create and share links to QR codes that could be saved and sent to others."
+    },
+    "importance": {
+      "title": "WHY IT MATTERS",
+      "text": "QR codes often need to be used outside the product: sent to another person, added to a website or document, or saved for later use. However, since this was a no-code platform, the solution needed to integrate with its action system, work across both web and mobile devices, and account for differences in available APIs (for example, printing is available only on the web, while the native system “Share” menu is available only on mobile devices)."
     },
     "desition": {
       "title": "SOLUTION",
-      "text1": "Instead of relying on the built-in QR code widget, I designed a standalone action. This approach solved multiple problems at once: the same action could also generate thumbnail images for page templates, which was another product requirement at the time. The action is triggered by a user event, receives the ID of an HTML element, and uses the html-to-image library to generate an image file.",
-      "text2": "This solution made the feature much more flexible, allowing both the number of available buttons and the action type to be configured individually for each client without additional development."
+      "text1": "I chose to create a separate action instead of using the built-in QR code widget, as this allowed me to solve several tasks at once: the same action could also generate thumbnails for page templates — which was an immediate need at the time. The action is triggered by a specific user event, receives the HTML element ID, and uses the html-to-image library to generate an image file.",
+      "text2": "This approach made the solution more flexible: the number of buttons and the action type could be configured for each client without additional development."
     },
     "settings": "ACTION SETTINGS",
     "web": "AVAILABLE WEB ACTIONS",
@@ -70,15 +74,29 @@
   },
   "script": "VIEW THE FULL USER FLOW",
   "input": {
+    "company": {
+      "title": "ABOUT THE COMPANY",
+      "text": "Nocode.ru is a platform for the digital transformation of large and medium-sized businesses, focused on delivering Enterprise solutions."
+    },
     "problem": {
-      "title": "PROBLEM",
-      "text1": "Payment forms are one of the most challenging interaction points in any fintech product. When entering data into a standard input field, users often make mistakes while entering card and account numbers, payment systems are not recognized, and there is no way to validate the entered values.",
-      "text2": "The task was to design a unified, reusable input component capable of supporting cards, bank accounts, and mixed input formats. It had to display the payment system logo, country flag, and currency code while validating data as the user entered it."
+      "title": "TASK",
+      "text": "Design a unified, reusable input component capable of working with cards, bank accounts, and a mixed format. It should display the payment system logo, country flag, and currency code, while validating the input as the user enters data."
+    },
+    "importance": {
+      "title": "WHY IT MATTERS",
+      "text": "Payment forms are one of the most challenging stages of interaction with any fintech product. When entering values into a standard input, users often make mistakes when entering card and account numbers, payment systems are not recognized, and there is no way to validate the entered values."
+    },
+    "team": {
+      "title": "MY ROLE",
+      "role1": "Worked as part of a team with an analyst and a QA engineer",
+      "role2": "Designed UX/UI based on the internal design system",
+      "role3": "Handed off designs to developers",
+      "role4": "Conducted design reviews of mockups during solution presentations"
     },
     "desition": {
       "title": "SOLUTION",
-      "text1": "I designed and implemented this component as part of a no-code platform. I defined the component states (default, hover, focus, active, disabled, error), described masking and validation logic for each input mode (card, account, card/account), prepared Figma layouts, and implemented the frontend part for web, mobile, and responsive platforms.",
-      "text2": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input components did not support this pattern."
+      "text1": "I designed and implemented this component as part of the no-code platform. I defined the component states (default, hover, focus, active, disabled, error), described the masking and validation logic for each input mode (card, account, card/account), prepared the designs in Figma, and implemented the frontend for both web and mobile/responsive platforms.",
+      "text2": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input fields did not support this pattern."
     },
     "adding": "ADDING THE WIDGET TO THE FORM",
     "validation": "VALIDATION",
