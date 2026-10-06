@@ -89,6 +89,10 @@
     color: var(--text-secondary);
 }
 
+.marginSmall {
+    margin-bottom: 24px;
+}
+
 .role {
     color: var(--text-secondary);
     margin-bottom: 4px;
@@ -105,4 +109,34 @@
         top: 6px;
         left: 0;
     }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+th {
+    color: var(--text-primary);
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+td:first-child,
+th:first-child {
+  width: 45%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }

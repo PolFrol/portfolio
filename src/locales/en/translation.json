@@ -93,6 +93,47 @@
       "role3": "Handed off designs to developers",
       "role4": "Conducted design reviews of mockups during solution presentations"
     },
+    "requirements": {
+      "title": "REQUIRED REQUIREMENTS",
+      "columns": {
+        "element": "Element",
+        "purpose": "Purpose"
+      },
+      "rows": [
+        {
+          "element": "Label",
+          "purpose": "Text label above the field (e.g., “Card or account number”)"
+        },
+        {
+          "element": "Input",
+          "purpose": "Main text field with masking and formatting"
+        },
+        {
+          "element": "Placeholder",
+          "purpose": "Text (e.g., “Enter text”)"
+        },
+        {
+          "element": "Payment system icon",
+          "purpose": "For example, Visa, Mastercard, or Mir (determined by BIN)"
+        },
+        {
+          "element": "Country flag",
+          "purpose": "Displayed when a country is available in the account number (e.g., IBAN)"
+        },
+        {
+          "element": "Currency code",
+          "purpose": "For example, RUB or USD — determined by the card or user's account data"
+        },
+        {
+          "element": "Validity indicator",
+          "purpose": "Colored field border, status icon, and error message"
+        },
+        {
+          "element": "Supported modes",
+          "purpose": "Card, Account, card/account"
+        }
+      ]
+    },
     "desition": {
       "title": "SOLUTION",
       "text1": "I designed and implemented this component as part of the no-code platform. I defined the component states (default, hover, focus, active, disabled, error), described the masking and validation logic for each input mode (card, account, card/account), prepared the designs in Figma, and implemented the frontend for both web and mobile/responsive platforms.",
