@@ -2,6 +2,10 @@
     padding: 32px;
 }
 
+.blockRight {
+    padding: 32px 32px 32px 0;
+}
+
 .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +90,23 @@
     object-position: top;
 }
 
+.imageBlock {
+    background-color: var(--border);
+    padding: 32px 20%;
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+
+    &.big {
+        padding: 32px;
+        margin-top: 0;
+    }
+
+    &.medium {
+        padding: 32px;
+    }
+}
+
 .text {
     color: var(--text-secondary);
 }
@@ -150,5 +171,16 @@ th:first-child {
 
 .col2 {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.col3 {
+    display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.subtitle {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
 }

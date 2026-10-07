@@ -100,11 +100,13 @@ export const InputPage = () => {
                             <p className={`${styles.text} ${styles.marginSmall}`}>Для настройки опций был выбран toggle, так как позволяет пользователю сразу увидеть текущее состояние настройки и изменить его одним действием.</p>
                             <p className={styles.text}>Для понимания пользователей о значении опции были добавлены тултипы с описанием.</p>
                         </div>
-                        <div className={styles.list}>
-                            <img className={styles.img} src={option} alt="Опции" />
-                            <img className={styles.img} src={optionSystem} alt="Хинт платежной системы" />
-                            <img className={styles.img} src={optionFlag} alt="Хинт флаг" />
-                            <img className={styles.img} src={optionCurrency} alt="Хинт валюты" />
+                        <div className={`${styles.imageBlock} ${styles.big}`}>
+                            <div className={styles.list}>
+                                <img className={styles.img} src={option} alt="Опции" />
+                                <img className={styles.img} src={optionSystem} alt="Хинт платежной системы" />
+                                <img className={styles.img} src={optionFlag} alt="Хинт флаг" />
+                                <img className={styles.img} src={optionCurrency} alt="Хинт валюты" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,12 +115,12 @@ export const InputPage = () => {
                         <div className={styles.header}>
                             <p className={styles.headerTitle}>РАЗДЕЛ ПОДСКАЗКИ</p>
                         </div>
-                        <div className={styles.rowSmall}>
+                        <div className={styles.col2}>
                             <div className={styles.block}>
                                 <p className={`${styles.text} ${styles.marginSmall}`}>Для настройки включения подсказок у контрола был также выбран toggle. При положении on появляется textarea для ввода текста.</p>
                                 <p className={styles.text}>Подсказки настраиваются для плейсхолдера и хинта у тултипа.</p>
-                            </div>
-                            <div className={styles.block}>
+                            </div>                        
+                            <div className={`${styles.imageBlock} ${styles.medium}`}>
                                 <div className={styles.rowSmall}>
                                     <img className={styles.img} src={hint} alt="Настройки валидации" />
                                     <img className={styles.img} src={hintFulled} alt="Настройки валидации" />
@@ -134,58 +136,94 @@ export const InputPage = () => {
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={styles.text}>Самая важная настройка контрола - маска. По маске происходит валидация введенного значения.</p>
+                                <div>
+                                    <p className={styles.subtitle}>ДОБАВЛЕНИЕ МАСКИ</p>
+                                </div>
+                                <p className={styles.text}>Маска - ключевая настройка контрола: по ней определяется формат и валидность введённого значения.</p>
                             </div>
-                            <img className={`${styles.img} ${styles.marginSmall}`} src={mask} alt="Настройка маски" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img} src={mask} alt="Настройка маски" />
+                            </div>
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={styles.text}>При нажатии на кнопку перед пользователем появляется модальное окно с необходимыми для настройки полями.</p>
+                                <div>
+                                    <p className={styles.subtitle}>НАСТРОЙКА ПАРАМЕТРОВ</p>
+                                </div>
+                                <p className={`${styles.text} ${styles.marginSmall}`}>При нажатии «Добавить маску» открывается модальное окно с необходимыми параметрами для настройки.</p>
+                                <p className={styles.text}>Поскольку значения задаются вручную и могут иметь произвольный формат, для их ввода выбран текстовый инпут.</p>
                             </div>
-                            <img className={`${styles.img} ${styles.marginSmall}`} src={modal} alt="Модальное окно настройки" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img} src={modal} alt="Модальное окно настройки" />
+                            </div>
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={styles.text}>Для удобства пользователей были добавлены хинты с подсказками, так как настройка сложная и могут возникнуть трудности.</p>
+                                <div>
+                                    <p className={styles.subtitle}>ПОДСКАЗКИ</p>
+                                </div>
+                                <p className={styles.text}>Настройка маски содержит несколько параметров и может быть сложной для пользователя, поэтому для ключевых полей добавлены контекстные подсказки.</p>
                             </div>
-                            <img className={`${styles.img} ${styles.marginSmall}`} src={hintModal} alt="Хинты для настройки маски" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img} src={hintModal} alt="Хинты для настройки маски" />
+                            </div>
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={styles.text}>При нажатии на кнопку "Загрузить изображение" появляется модальное окно для настройки изображения, которое будет выводиться в контроле.</p>
+                                <div>
+                                    <p className={styles.subtitle}>ВЫБОР ИЗОБРАЖЕНИЯ</p>
+                                </div>
+                                <p className={styles.text}>Для настройки изображения используется отдельное модальное окно, которое открывается по нажатию «Загрузить изображение».</p>
                             </div>
-                            <img className={`${styles.img} ${styles.marginSmall}`} src={imageModal} alt="Настройка изображения" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img}  src={imageModal} alt="Настройка изображения" />
+                            </div>
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={`${styles.text} ${styles.marginSmall}`}>Значения в контролы вводятся вручную, поэтому был выбран текстовый инпут.</p>
-                                <p className={styles.text}>Маски могут быть любыми, в зависимости от типа платежной системы или номера счета, требование от банка было, что корректность введенных значений на совести пользователя. Накакую дополнительную валидацию для этого не добавляли.</p>
+                                <div>
+                                    <p className={styles.subtitle}>ВВОД ЗНАЧЕНИЙ</p>
+                                </div>
+                                <p className={`${styles.text} ${styles.marginSmall}`}>Маски могут отличаться в зависимости от типа платёжной системы или номера счёта.</p>
+                                <p className={styles.text}>По требованиям банка дополнительная валидация маски не выполняется — корректность введённого значения остаётся на стороне пользователя.</p>
                             </div>
-                            <img className={`${styles.img} ${styles.marginSmall}`} src={filledModal} alt="Заполненное модальное окно" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img} src={filledModal} alt="Заполненное модальное окно" />
+                            </div>
                         </div>
                         <div className={styles.col2}>
                             <div className={styles.block}>
-                                <p className={`${styles.text} ${styles.marginSmall}`}>Так как масок может быть несколько, при сохранении модального окна с настройками, формируется список из сохраненных масок.</p>
-                                <p className={styles.text}>В плашке сохраненной маске содержится информация о названии маски и на какие начальные значения она работает.</p>
+                                <div>
+                                    <p className={styles.subtitle}>СОХРАНЕННАЯ МАСКА</p>
+                                </div>
+                                <p className={`${styles.text} ${styles.marginSmall}`}>Поскольку для одного контрола может быть настроено несколько масок, после сохранения они отображаются в виде списка.</p>
+                                <p className={styles.text}>В каждой маске пользователь видит её название и начальные значения, для которых она применяется.</p>
                             </div>
-                            <img className={styles.img} src={selectedMask} alt="Сохраненная маска" />
+                            <div className={styles.imageBlock}>
+                                <img className={styles.img} src={selectedMask} alt="Сохраненная маска" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={styles.rowSmall}>
-                    <div className={`${styles.content} ${styles.margin}`}>
+                 <div className={styles.margin}>
+                    <div className={styles.content}>
                         <div className={styles.header}>
                             <p className={styles.headerTitle}>{t('input.validation')}</p>
                         </div>
-                        <div className={styles.imgBlock}>
-                            <img src={settings} alt="Настройки валидации" />
+                        <div className={styles.col3}>
+                            <div className={styles.imageBlock}>
+                                <img src={settings} alt="Настройки валидации" />
+                            </div>
+                            <div className={styles.blockRight}>
+                                <p className={`${styles.text} ${styles.marginSmall}`}>Выявила пробел в требованиях: не был определён сценарий обработки номера карты или счёта, если для него не задана маска. Чтобы контрол мог работать с такими форматами, добавила настройку минимальной и максимальной длины значения.</p>
+                                <p className={styles.text}>Это дало возможность гибко ограничивать допустимый формат ввода без создания отдельной маски. Например, для номера карты можно задать стандартный диапазон 13–19 символов, а для сценария, где поддерживаются только карты Visa, ограничить значение 16 символами.</p>
+                            </div>
                         </div>
                     </div>
-                    <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.textValidator')}</p>
-                </div>
+                 </div>
             </div>
 
-            <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.text')}</p>
+            <p className={`${styles.block} ${styles.text}`}>{t('input.text')}</p>
             <div className={styles.content}>
                 <div className={styles.header}>
                     <p className={styles.headerTitle}>{t('input.mobile')}</p>
