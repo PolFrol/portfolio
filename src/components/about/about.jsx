@@ -71,7 +71,7 @@ export const About = () => {
                             </div>
                         </div>
                         
-                        <a className={styles.button} href='https://docs.google.com/document/d/1KBvB_hHpMe2RsS7OspyTQ0qIZo4MX_HNlit-h13PU6I/edit?usp=sharing'>{t('about.button')}</a>
+                        <a className={styles.button} href='https://drive.google.com/file/d/1bViwvaVRo_85Y1vUDMdKzY5I_33u1Giu/view?usp=drive_link'>{t('about.button')}</a>
                         
                     </div>
                 </div>
