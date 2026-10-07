@@ -121,6 +121,10 @@
 .col2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
+
+    &.align {
+        align-items: center;
+    }
 }
 
 .col3 {

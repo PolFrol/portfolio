@@ -60,7 +60,7 @@ export const QrPage = () => {
                         <img src={sber} alt="Сбер" height={100} width={100} />
                     </div>
                 </div>
-                <div className={styles.col2}>
+                <div className={`${styles.col2} ${styles.align}`}>
                     <div className={`${styles.imageBlock} ${styles.withoutMargin}`}>
                         <img className={styles.img} src={alfaScreen} alt="Альфа экран" height={175} width={375} />
                     </div>
