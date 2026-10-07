@@ -15,6 +15,7 @@
 .rowSmall {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
 .margin {
@@ -139,9 +140,15 @@ th:first-child {
 .list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
 }
 
 .col2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
 }

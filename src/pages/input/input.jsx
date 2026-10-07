@@ -172,17 +172,17 @@ export const InputPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.rowSmall}>
-                <div className={`${styles.content} ${styles.margin}`}>
-                    <div className={styles.header}>
-                        <p className={styles.headerTitle}>{t('input.validation')}</p>
+                <div className={styles.rowSmall}>
+                    <div className={`${styles.content} ${styles.margin}`}>
+                        <div className={styles.header}>
+                            <p className={styles.headerTitle}>{t('input.validation')}</p>
+                        </div>
+                        <div className={styles.imgBlock}>
+                            <img src={settings} alt="Настройки валидации" />
+                        </div>
                     </div>
-                    <div className={styles.imgBlock}>
-                        <img src={settings} alt="Настройки валидации" />
-                    </div>
+                    <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.textValidator')}</p>
                 </div>
-                <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.textValidator')}</p>
             </div>
 
             <p className={`${styles.block} ${styles.margin} ${styles.text}`}>{t('input.text')}</p>
