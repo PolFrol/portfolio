@@ -30,7 +30,9 @@
     font-family: var(--heading);
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
 }
 
 .tools {
@@ -177,10 +179,4 @@ th:first-child {
 .col3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-}
-
-.subtitle {
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 24px;
 }
