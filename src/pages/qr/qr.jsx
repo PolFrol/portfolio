@@ -1,6 +1,6 @@
 import styles from './qr.module.css';
 import webAction from '../../assets/webAction.png';
-import editAction from '../../assets/editAction.png';
+// import editAction from '../../assets/editAction.png';
 import finalAction from '../../assets/finalAction.png';
 import alfa from '../../assets/alfa.png';
 import tbank from '../../assets/tbank.png';
@@ -153,24 +153,25 @@ export const QrPage = () => {
                         <div className={styles.imageBlock}>
                             <img className={styles.img} src={finalAction} alt="Выбор значения" />
                         </div>
+                         <div className={styles.block}>
+                            <div>
+                                <p className={styles.subtitle}>ДЕЙСТВИЯ ДЛЯ ВЕБА</p>
+                            </div>
+                            <p className={styles.text}>Учла различия в действиях для веб платформы</p>
+                        </div>
+                        <div className={styles.imageBlock}>
+                            <img className={styles.img} src={webAction} alt="Действия на вебе" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className={styles.rowSmall}>
-                <div className={styles.contentSmall}>
+            <div className={styles.block}>
+                <div className={styles.content}>
                     <div className={styles.header}>
-                        <p className={styles.headerTitle}>{t('qr.web')}</p>
-                    </div>
-                    <img className={styles.img} src={webAction} alt="Действия на вебе" />
-                </div>
-                <div className={styles.contentSmall}>
-                    <div className={styles.header}>
-                        <p className={styles.headerTitle}>{t('qr.edit')}</p>
-                    </div>
-                    <div className={styles.imgWrapper}>
-                        <img className={styles.img} src={editAction} alt="Конечный вид настройки" />
+                        <p className={styles.headerTitle}>ПРОТОТИП</p>
                     </div>
                 </div>
+                <iframe width="100%" height="1024" src="https://embed.figma.com/proto/X6LfqnBqRXnIoM589sjXVD/%D0%A1%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8?node-id=186-4115&m=draw&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=186%3A3651&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
             </div>
             <ShowScript src={'https://www.figma.com/design/X6LfqnBqRXnIoM589sjXVD/%D0%A1%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8?node-id=1-1112&t=4PpAZoTMpTpbstdY-1'}></ShowScript>
         </>

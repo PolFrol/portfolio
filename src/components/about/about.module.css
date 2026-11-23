@@ -58,7 +58,8 @@
 
 .subtitle {
     font-family: var(--heading);
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
     margin-bottom: 12px;
 }

@@ -76,6 +76,7 @@ h4 {
 
 h1 {
   font-size: 40px;
+  line-height: 52px;
   font-weight: 800;
   @media (max-width: 1024px) {
     font-size: 36px;
@@ -84,6 +85,7 @@ h1 {
 }
 h2 {
   font-size: 32px;
+  line-height: 40px;
   font-weight: 700;
   @media (max-width: 1024px) {
     font-size: 20px;
@@ -92,6 +94,7 @@ h2 {
 
 h3 {
   font-size: 32px;
+  line-height: 40px;
   font-weight: 600;
   @media (max-width: 1024px) {
     font-size: 20px;
@@ -100,6 +103,7 @@ h3 {
 
 h4 {
   font-size: 24px;
+  line-height: 32px;
   font-weight: 600;
   @media (max-width: 1024px) {
     font-size: 20px;
@@ -109,12 +113,14 @@ h4 {
 p {
   margin: 0;
   font-family: var(--sans);
+  line-height: 24px;
 }
 
 nav {
   font-family: var(--heading);
   font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
 }
 
 ul {

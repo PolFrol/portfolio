@@ -29,6 +29,7 @@
 .title {
     font-family: var(--heading);
     font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -61,7 +62,8 @@
 
 .headerTitle {
     font-family: var(--heading);
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
 }
 
@@ -160,6 +162,7 @@
 .subtitle {
     font-family: var(--heading);
     font-size: 16px;
+    line-height: 24px;
     font-weight: 600;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--border);
@@ -170,5 +173,10 @@
     background-color: var(--border);
     display: flex;
     align-items: center;
-    height: calc(100% - 72px);
+    height: calc(100% - 81px);
+}
+
+.select {
+    margin: 0 auto;
+    width: 70%;
 }
