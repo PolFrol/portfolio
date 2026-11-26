@@ -1,164 +1,164 @@
 {
   "navigation": {
-    "name": "FROLOVA POLINA",
-    "cases": "CASE STUDIES",
-    "about": "ABOUT",
-    "contacts": "CONTACTS"
+    "name": "ФРОЛОВА ПОЛИНА",
+    "cases": "КЕЙСЫ",
+    "about": "О СЕБЕ",
+    "contacts": "КОНТАКТЫ"
   },
   "main": {
-    "title": "Product Designer\nwith a Frontend Development Background",
-    "description": "I design interfaces and understand how they are built",
-    "projects": "VIEW PROJECTS",
-    "invite": "INVITE"
+    "title": "Продуктовый дизайнер<br/>с бэкграундом фронтенд разработки",
+    "description": "Я создаю интерфейсы и знаю как это будет работать",
+    "projects": "ПОСМОТРЕТЬ ПРОЕКТЫ",
+    "invite": "ПРИГЛАСИТЬ НА СОБЕСЕДОВАНИЕ"
   },
   "about": {
-    "title": "ABOUT",
-    "text1": "I have 5 years of commercial experience as a Frontend Developer in fintech, including 2 years combining development with product design. I designed mobile and web applications for banks and built a modular UI architecture with configurable interface parameters for a no-code platform from scratch. Over time, I realized that what fascinated me most was not writing code, but understanding how an interface should work and why.",
-    "text2": "I transitioned into Product Design, bringing with me a strong understanding of technical constraints, component-based thinking, and a systems-oriented approach. My designs are realistic because I know exactly how they will be built.",
-    "subtitle1": "2020–2023 — Freelance Web Designer",
-    "text3": "Designed 10+ landing pages for educational projects (Spanish and English language courses) and the event industry (wedding invitations). Worked directly with clients without formal briefs, defining page goals, user needs, and the visual direction for each project independently.",
-    "subtitle2": "2021–2023 — Frontend Markup Developer (Fintech)",
-    "text4": "Contributed to the company's internal design system by implementing UI controls, components, and their states while collaborating with designers on technical constraints. Defined reusable design tokens adopted across multiple applications, reducing development time for new screens and improving visual consistency between products.",
-    "subtitle3": "2023–2026 — Frontend Developer, No-Code Platform",
-    "text5": "Built reusable UI modules for a page and form builder, designing flexible components that became tools for other designers, as users of the no-code platform assembled their own interfaces from them. Conducted design reviews, helping identify potential implementation issues before features reached production.",
-    "companies": "COMPANIES I'VE WORKED WITH",
+    "title": "О СЕБЕ",
+    "text1": "5 лет коммерческого опыта работы фронтенд-разработчиком в fintech-проектах из которых 2 года я совмещала с продуктовым дизайном: создавала мобильные и веб приложения для банков,  модульную UI-архитектуру с настраиваемыми параметрами  интерфейса для no-code платформы с нуля. В какой-то момент поняла, что меня больше всего захватывает не код, а то, каким должен быть интерфейс и почему.",
+    "text2": "Я перешла в продуктовый дизайн и забрала с собой понимание технических ограничений, компонентное мышление и привычку думать об ограничениях системы. Мои макеты реальны: я знаю, как это будет создано.",
+    "subtitle1": "2020–2023 — Freelance Web Design",
+    "text3": "Создала 10+ лендингов для образовательных проектов (курсы испанского, английского) и ивент-индустрии (свадебные приглашения). Работала напрямую с клиентами без брифов — самостоятельно формулировала цели страницы, визуальный стиль под каждый запрос.",
+    "subtitle2": "2021–2023 — HTML Developer в финтехе",
+    "text4": "Создавала внутреннюю дизайн систему компании: верстала контролы и компоненты, их состояния, обсуждала с дизайнерами технические ограничения. Описывала цветовые токены, которые переиспользовались командой в нескольких приложениях — это сократило время сборки новых экранов и снизило визуальные расхождения между продуктами.",
+    "subtitle3": "2023–2026 — Frontend Developer, no-code платформа",
+    "text5": "Создавала UI-модули для конструктора страниц и форм - проектировала гибкие компоненты, которые сами становятся инструментом для чужого дизайна, так как пользователи no-code платформы строят из них свои интерфейсы. Проводила ревью макетов, что помогало подсветить спорные моменты из-за которых могли возникнуть проблемы выпуска фичи в прод.",
+    "companies": "Работала с компаниями",
     "rysgal": "Rysgal Bank",
-    "aiyl": "Aiyl Bank",
-    "ingo": "Ingosstrakh Bank",
-    "kyban": "Kuban Credit Bank",
-    "rnkb": "RNKB Bank",
+    "aiyl": "Айыл Банк",
+    "ingo": "Ингосстрах Банк",
+    "kyban": "Кубань Кредит Банк",
+    "rnkb": "РНКБ Банк",
     "bcn": "Banco Caboverdiano de Negócios",
-    "track": "CAREER PATH",
+    "track": "Карьерный трек",
     "job1": "Product Designer / 2025",
     "job2": "Frontend Developer / 2023",
-    "job3": "Frontend Markup Developer / 2021",
-    "button": "RESUME"
+    "job3": "HTML Developer / 2021",
+    "button": "РЕЗЮМЕ"
   },
   "cases": {
-    "title": "CASE STUDIES",
+    "title": "КЕЙСЫ",
     "1": {
-      "title": "Image Generation",
-      "text": "A cross-platform tool for generating images that can be used to create and share QR code links."
+      "title": "Генерация изображения",
+      "text": "Кроссплатформенный инструмент для генерации изображений, который можно использовать для создания QR-ссылки."
     },
     "2": {
-      "title": "Bank Details Input Widget",
-      "text": "A reusable input component for bank cards and account numbers with real-time BIN detection, input masking, and cross-platform validation states."
+      "title": "Виджет банковских реквизитов",
+      "text": "Универсальный виджет для ввода данных карты или банковского счета, поддерживающий определение BIN в реальном времени, маскирование формата и кроссплатформенные состояния и валидации."
     },
     "3": {
-      "title": "Dashboard",
-      "text": "A dashboard designed to present key information in a language learning application."
+      "title": "Дашборд",
+      "text": "Дашборд для отображения главной информации в приложении для изучения языка."
     }
   },
-  "contacts": "CONTACTS",
+  "contacts": "КОНТАКТЫ",
   "header": {
-    "name": "TITLE",
-    "industry": "INDUSTRY"
+    "name": "НАЗВАНИЕ",
+    "industry": "НАПРАВЛЕНИЕ"
   },
   "qr": {
     "problem": {
-      "title": "TASK",
-      "text": "Give users the ability to create and share links to QR codes that could be saved and sent to others."
+      "title": "ЗАДАЧА",
+      "text": "Дать пользователям возможность создавать и делиться ссылкой на QR-коды, которые можно было бы сохранять и отправлять другим."
     },
     "importance": {
-      "title": "WHY IT MATTERS",
-      "text": "QR codes often need to be used outside the product: sent to another person, added to a website or document, or saved for later use. However, since this was a no-code platform, the solution needed to integrate with its action system, work across both web and mobile devices, and account for differences in available APIs (for example, printing is available only on the web, while the native system “Share” menu is available only on mobile devices)."
+      "title": "ПОЧЕМУ ЭТО ВАЖНО",
+      "text": "QR-код часто необходимо использовать вне продукта: отправить другому человеку, добавить на сайт, в документ или сохранить. Однако, поскольку речь шла о no-code платформе, решение должно было интегрироваться в ее систему действий, работать как в веб-версии, так и на мобильных устройствах, а также учитывать различия в доступных API (например, печать доступна только в вебе, а системное меню «Поделиться» — только на мобильных устройствах)."
     },
     "desition": {
-      "title": "SOLUTION",
-      "text1": "I chose to create a separate action instead of using the built-in QR code widget, as this allowed me to solve several tasks at once: the same action could also generate thumbnails for page templates — which was an immediate need at the time. The action is triggered by a specific user event, receives the HTML element ID, and uses the html-to-image library to generate an image file.",
-      "text2": "This approach made the solution more flexible: the number of buttons and the action type could be configured for each client without additional development."
+      "title": "РЕШЕНИЕ",
+      "text1": "Я выбрала создание отдельного действия вместо использования встроенного виджета QR-кода, так как это позволяло решить сразу несколько задач: то же самое действие могло генерировать миниатюры для шаблонов страниц — что было актуальной потребностью на тот момент.",
+      "text2": "Такой подход сделал решение более гибким: количество кнопок и тип действия можно было настраивать для каждого клиента без дополнительной разработки."
     },
-    "settings": "ACTION SETTINGS",
-    "web": "AVAILABLE WEB ACTIONS",
-    "edit": "FINAL RESULT"
+    "settings": "НАСТРОЙКА ДЕЙСТВИЯ",
+    "web": "ДОСТУПНЫЕ ДЕЙСТВИЯ ДЛЯ ВЕБА",
+    "edit": "ДЕЙСТВИЯ С СОХРАНЕННЫМИ НАСТРОЙКАМИ"
   },
-  "script": "VIEW THE FULL USER FLOW",
+  "script": "ПОСМОТЕТЬ СЦЕНАРИЙ ПОЛНОСТЬЮ",
   "input": {
     "company": {
-      "title": "ABOUT THE COMPANY",
-      "text": "Nocode.ru is a platform for the digital transformation of large and medium-sized businesses, focused on delivering Enterprise solutions."
+      "title": "О КОМПАНИИ",
+      "text": "Платформа Nocode.ru - инструмент для цифровой трансформации крупного и среднего бизнеса, который заточен под реализацию Enterprise-решений."
     },
     "problem": {
-      "title": "TASK",
-      "text": "Design a unified, reusable input component capable of working with cards, bank accounts, and a mixed format. It should display the payment system logo, country flag, and currency code, while validating the input as the user enters data."
+      "title": "ЗАДАЧА",
+      "text": "Спроектировать единый, переиспользуемый компонент ввода, способный работать с картами, банковскими счетами и смешанным форматом. Он должен отображать логотип платежной системы, флаг страны и код валюты, выполняя при этом валидацию  по мере ввода данных пользователем."
     },
     "importance": {
-      "title": "WHY IT MATTERS",
-      "text": "Payment forms are one of the most challenging stages of interaction with any fintech product. When entering values into a standard input, users often make mistakes when entering card and account numbers, payment systems are not recognized, and there is no way to validate the entered values."
+      "title": "ПОЧЕМУ ЭТО ВАЖНО",
+      "text": "Формы оплаты — один из самых проблемных этапов взаимодействия с любым финтех-продуктом. При вводе значений в обычный инпут пользователи часто ошибаются при вводе номеров карт и счетов, платежные системы не распознаются, нет возможности валидировать введенные значения."
     },
     "team": {
-      "title": "MY ROLE",
-      "role1": "Worked as part of a team with an analyst and a QA engineer",
-      "role2": "Designed UX/UI based on the internal design system",
-      "role3": "Handed off designs to developers",
-      "role4": "Conducted design reviews of mockups during solution presentations"
+      "title": "МОЯ РОЛЬ",
+      "role1": "Работа в команде с аналитиком и тестировщиком",
+      "role2": "Разработка UX/UI на базе внутренней дизайн-системы",
+      "role3": "Передача макетов разработчикам",
+      "role4": "Дизайн ревью макетов на презентации образа решения"
     },
     "requirements": {
-      "title": "REQUIRED REQUIREMENTS",
+      "title": "ОБЯЗАТЕЛЬНЫЕ ТРЕБОВАНИЯ И ИНСТРУМЕНТЫ",
       "columns": {
-        "element": "Element",
-        "purpose": "Purpose"
+        "element": "Элемент",
+        "purpose": "Назначение"
       },
       "rows": [
         {
           "element": "Label",
-          "purpose": "Text label above the field (e.g., “Card or account number”)"
+          "purpose": "Текстовая подпись над полем (например, «Номер карты или счёта»)"
         },
         {
           "element": "Input",
-          "purpose": "Main text field with masking and formatting"
+          "purpose": "Основное текстовое поле с маской и форматированием"
         },
         {
           "element": "Placeholder",
-          "purpose": "Text (e.g., “Enter text”)"
+          "purpose": "Текст (например, «Введите текст»)"
         },
         {
-          "element": "Payment system icon",
-          "purpose": "For example, Visa, Mastercard, or Mir (determined by BIN)"
+          "element": "Иконка платежной системы",
+          "purpose": "Например, Visa, Mastercard, Мир (определяется по BIN)"
         },
         {
-          "element": "Country flag",
-          "purpose": "Displayed when a country is available in the account number (e.g., IBAN)"
+          "element": "Флаг страны",
+          "purpose": "Отображается при наличии страны в номере счёта (например, в IBAN)"
         },
         {
-          "element": "Currency code",
-          "purpose": "For example, RUB or USD — determined by the card or user's account data"
+          "element": "Код валюты",
+          "purpose": "Например, RUB, USD — определяется по данным карты или счёта пользователя"
         },
         {
-          "element": "Validity indicator",
-          "purpose": "Colored field border, status icon, and error message"
+          "element": "Индикатор валидности",
+          "purpose": "Цветная обводка поля, иконка состояния, текст ошибки"
         },
         {
-          "element": "Supported modes",
+          "element": "Поддерживаемые режимы",
           "purpose": "Card, Account, card/account"
         }
       ]
     },
     "desition": {
-      "title": "SOLUTION",
-      "text1": "I designed and implemented this component as part of the no-code platform. I defined the component states (default, hover, focus, active, disabled, error), described the masking and validation logic for each input mode (card, account, card/account), prepared the designs in Figma, and implemented the frontend for both web and mobile/responsive platforms.",
-      "text2": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input fields did not support this pattern."
+      "title": "РЕШЕНИЕ",
+      "text1": "Я спроектировала и реализовала этот компонент в рамках no-code платформы. Я определила состояния компонента (по умолчанию, наведение, фокус, активное состояние, неактивное состояние, ошибка), описала логику маскирования и валидации для каждого режима ввода (карта, счет, карта/счет), а также подготовила макеты в Figma и реализовала фронтенд-часть как для веб, так и для мобильных/адаптивных платформ.",
+      "text2": "Компонент был создан на базе существующего поля ввода из дизайн системы, чтобы сохранить возможность размещения элементов по обеим сторонам поля (стандартные поля ввода такой паттерн не поддерживали)."
     },
-    "adding": "ADDING THE WIDGET TO THE FORM",
-    "validation": "VALIDATION",
-    "textValidator": "During development, I faced a lack of requirements for handling card or account numbers without a predefined mask. To solve this issue, I added validation parameters for minimum and maximum character limits to support formats without predefined masks. For example, in card input mode, the standard range is 13 to 19 characters (according to international standards). However, if a user knows that the transfer is made only to a Visa card, the maximum value can be limited to 16 characters — without requiring a predefined mask.",
-    "text": "The unified reusable component replaced fragmented payment data input fields previously used on the platform. Clients gained the ability to configure it for specific payment systems without requiring custom development.",
-    "mobile": "USING THE WIDGET IN A MOBILE APPLICATION"
+    "adding": "ДОБАВЛЕНИЕ ВИДЖЕТА НА ФОРМУ",
+    "validation": "ВАЛИДАЦИЯ",
+    "textValidator": "При разработке столкнулась с отсутвием требований для поведения номера карты или счета при отсутствии сохраненной маски. Чтобы это решить были добавлены параметры валидации по минимальному и максимальному количеству символов для обработки форматов, не имеющих заранее заданной маски. Например, в режиме ввода карты стандартный диапазон составляет от 13 до 19 символов (согласно международному стандарту), однако, если пользователь знает, что перевод осуществляется только на карту Visa, максимальное значение можно ограничить 16 символами - маска при этом не требуется.",
+    "text": "Единый переиспользуемый компонент заменил разрозненные поля ввода платежных данных, использовавшиеся ранее на платформе. Клиенты получили возможность настраивать его под конкретные платежные системы без необходимости заказывать индивидуальную разработку.",
+    "mobile": "ИСПОЛЬЗОВАНИЕ ВИДЖЕТА В МОБИЛЬНОМ ПРИЛОЖЕНИИ"
   },
   "dashboard": {
     "task": {
-      "title": "TASK",
-      "text1": "Create an English learning dashboard in two themes: light and dark.",
-      "text2": "Practice working with grids, components, and color tokens."
+      "title": "ЗАДАЧА",
+      "text1": "Создать дашборд для изучения английского языка в двух темах: светлой и темной.",
+      "text2": "Поработать с сеткой, компонентами и цветовыми токенами."
     },
     "desition": {
-      "title": "SOLUTION",
-      "text1": "I started with a content audit: identified what information should be displayed on the dashboard — progress in current courses, homework completion status, ranking among friends, and overall learning performance.",
-      "text2": "Next, I grouped the content into meaningful blocks and prioritized them based on user importance. The performance chart was the most information-dense element (daily progress trends and metric comparisons), so I allocated the largest area to it and placed it in the center — according to the F-pattern layout, this is the first attention zone after the top navigation.",
-      "text3": "I built the “Homework” and “Friends Score” blocks using the same logic: both display a list of items with a progress bar/value on the right. Since the data structure was identical (list + metric), I made them equal in size and aligned them vertically. This creates visual balance in the lower part of the screen and communicates that both sections have the same level of importance rather than one being primary and the other secondary.",
-      "text4": "The component was built on top of the existing input field to preserve the ability to place elements on both sides of the field, as standard input components did not support this pattern."
+      "title": "РЕШЕНИЕ",
+      "text1": "Начала с аудита контента: определила, какая информация должна присутствовать на дашборде — прогресс по текущим курсам, статус выполнения домашних заданий, рейтинг среди друзей и общая успеваемость.",
+      "text2": "Дальше сгруппировала контент по смысловым блокам и расставила приоритеты по их значимости для пользователя. График успеваемости самый информационно насыщенный элемент (динамика по дням, сравнение показателей), поэтому ему отдала наибольшую площадь и разместила в центре — по F-паттерну это первая зона внимания после верхнего меню.",
+      "text3": "Блоки «Домашние задания» и «Счёт друзей» построила по единой логике: оба показывают список из нескольких элементов с прогресс-баром/значением справа. Раз структура данных одинаковая (список + метрика), сделала их равными по размеру и выровняла по высоте — это создаёт визуальный баланс в нижней части экрана и телю, что это контент одного уровня важности, а не основной/второстепенный.",
+      "text4": "Такой подход к иерархии упростил переход к сетке: крупные и мелкие блоки легко легли в модульную колоночную систему без лишних кастомных отступов."
     },
-    "light": "LIGHT THEME",
-    "dark": "DARK THEME"
+    "light": "СВЕТЛАЯ ТЕМА",
+    "dark": "ТЕМНАЯ ТЕМА"
   }
 }
